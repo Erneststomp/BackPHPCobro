@@ -1,0 +1,16 @@
+{
+    "servicio": "Ejemplo de servicio",
+    "costo": 100,
+    "plazos": 1,
+    "nombre": "Nombre de Prueba",
+    "email": "correo@sejemplo.com",
+    "password_": "contraseña_segura",
+    "unidad": "Unidad de Prueba",
+    "dependencia": "Dependencia de Prueba",
+    "typeOfUser": "Adminw",
+    "cliente" : "cliente de prueba",
+    "numero_contacto": 7223456789,
+    "total":243,
+    "abono":120,
+    "adeudo": 123
+}
