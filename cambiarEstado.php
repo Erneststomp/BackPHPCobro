@@ -10,7 +10,7 @@ $out = [
 
 session_start();
 // Verificar que el usuario haya iniciado sesión y tenga permisos de administrador.
-if (isset($_SESSION['user_nombre']) && isset($_SESSION['user_typeOfUser']) && $_SESSION['user_typeOfUser'] == 'Admin') {
+if (isset($_SESSION['user_nombre']) && isset($_SESSION['user_typeOfUser']) && ($_SESSION['user_typeOfUser'] == 'Admin'||$_SESSION['user_typeOfUser'] == 'Supervisor')) {
     // Verificar que la solicitud sea de tipo POST
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Obtener los datos enviados en la solicitud

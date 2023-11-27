@@ -27,6 +27,7 @@ $out = [
                         "nombre" => $row["nombre"],
                         "email" => $row["email"],
                         "estado" => $row["estado"],
+                        "typeOfUser" => $row["typeOfUser"],
                     ];
                 }
                 $out = [

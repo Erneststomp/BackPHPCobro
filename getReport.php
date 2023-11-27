@@ -24,9 +24,9 @@ if (isset($_SESSION['user_nombre'])) {
         try {
             $nombreTabla = "registroVentas"; 
                 if($_SESSION['user_typeOfUser']==="Admin"){
-                    $sql = "SELECT * FROM " . $nombreTabla . " WHERE fecha BETWEEN '" . $fechai . "' AND '" . $fechaf . "'";
+                    $sql = "SELECT * FROM " . $nombreTabla . " WHERE fecha BETWEEN '" . $fechai . "' AND '" . $fechaf . "'  ";
                 }else{
-                    $sql = "SELECT * FROM " . $nombreTabla . " WHERE unidad='" . $_SESSION['user_unidad'] . "' AND dependencia='" . $_SESSION['user_dependencia'] . "' AND fecha BETWEEN '" . $fechai . "' AND '" . $fechaf . "'";
+                    $sql = "SELECT * FROM " . $nombreTabla . " WHERE unidad='" . $_SESSION['user_unidad'] . "' AND dependencia='" . $_SESSION['user_dependencia'] . "' AND fecha BETWEEN '" . $fechai . "' AND '" . $fechaf . "'  ";
                 }
            
 
